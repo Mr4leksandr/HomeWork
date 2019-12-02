@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Grid Mock Ups</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main-box">
+            <div class="top">
+                <img class="top-img" src="img/woonhuis_318-1861.jpg" alt="logo">
+                <div class="top-text">
+                    <h3 class="main-name">LUXO</h3>
+                    <p class="Estate">ESTATE</p>
+                </div>
+                <div class="button">
+                    <button aria-expanded="false">
+                        <span class="subscribe">subscribe</span>
+                        <span class="unsubscribe">unsubscribe</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="top-info">
+                <h2>Luxo have New Offers For You</h2>
+                <p class="text1-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, cumque.</p>
+                <div class="learn-more">
+                    <p class="p-button">Learn More ></p>
+                </div>
+            </div>
+
+
+            <div class="middle">
+                <div class="grid1">
+                    <div class="card-wrapper">
+                        <div class="img">
+                            <img class="image" src="img/moodwall-P2-P5-office-front-sliding-glass-door-img.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Luxo Offer #1</h3>
+                            <p>London UK</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate repellat amet a incidunt ad ab odio repellendus voluptas, distinctio ipsa?</p>
+                            <h3>$799/mo</h3>
+                            <div class="butShowMore">
+                                <p>Show Me More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="img">
+                            <img  class="image" src="img/moodwall-P2-P5-office-front-sliding-glass-door-img.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Luxo Offer #2</h3>
+                            <p>London UK</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate repellat amet a incidunt ad ab odio repellendus voluptas, distinctio ipsa?</p> 
+                            <h3>$899/mo</h3>
+                            <div class="butShowMore">
+                                    <p>Show Me More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="img">
+                            <img class="image" src="img/moodwall-P2-P5-office-front-sliding-glass-door-img.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Luxo Offer #3</h3>
+                            <p>London UK</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate repellat amet a incidunt ad ab odio repellendus voluptas, distinctio ipsa?</p> 
+                            <h3>$999/mo</h3>
+                            <div class="butShowMore">
+                                    <p>Show Me More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="middle-info">
+                <div class="ForText">
+                    <h2 class="white">New </h2>
+                    <h2 class="yellow">Life, </h2>
+                    <h2 class="white">New </h2>
+                    <h2 class="yellow">Beginning</h2>
+                </div>
+                
+                <div class="watch-video">
+                    <p>Watch Me</p>
+                </div>
+            </div>
+
+
+            <div class="bottom-info">
+                <div class="card-wrapper2-1">
+                    <div class="text2-1">
+                        <h2>Luxo Offer #1</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad repellendus dolor quia aliquid reiciendis impedit accusamus laborum iusto possimus.</p>
+                        <h2>$799/mo</h2>
+                    </div>
+                    <div class="img2">
+                        <img src="img/moodwall-P2-P5-office-front-sliding-glass-door-img.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="card-wrapper2-2">
+                    <div class="img2">
+                        <img src="img/moodwall-P2-P5-office-front-sliding-glass-door-img.jpg" alt="">
+                    </div>
+                    <div class="text2-2">
+                        <h2>Luxo Offer #1</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error facilis neque mollitia iste libero explicabo quibusdam eaque commodi, vitae impedit.</p>
+                        <h2>$799/mo</h2>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="bottom">
+                <img class="bottom-img" src="img/woonhuis_318-1861.jpg" alt="logo">
+
+                <p>All Rights Reserved</p>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('button[aria-expanded]');
+        function toggleMenu({target}){
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          menuButton.setAttribute('aria-expanded', !expanded);
+          console.log("Toggled!");
+        }
+        menuButton.addEventListener('click', toggleMenu);
+      </script>
+      
+</body>
+</html>
